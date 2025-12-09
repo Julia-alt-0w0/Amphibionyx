@@ -1,0 +1,122 @@
+/* Faz o body ocupar toda a altura da tela e organizar os elementos em coluna */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* altura total da tela */
+    margin: 0;
+}
+
+/* Faz o main ocupar o espaço disponível entre header e footer */
+main {
+    flex: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgb(59, 92, 59) !important;
+}
+
+/* CARROSSEL */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+    object-fit: cover;
+}
+
+/* MARKETING */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.25);
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 img {
+    width: 140px;
+    height: 120px;
+    border-radius: 50%;
+    
+}
+
+.col-lg-4 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* FEATURETTES */
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.col-lg-4:hover {
+    background-color: rgba(81, 97, 81, 0.253);
+    transform: translateY(-6px);
+}
+
+/*footer*/
+.custom-footer {
+    min-height: 200px; /* altura mínima */
+    padding: 40px 0;   /* 50px em cima e embaixo */
+    margin-top: 10px;
+    background-color: rgb(84, 99, 81);
+}
+
+/* From Uiverse.io by TCdesign-dev */ 
+#bottone1 {
+ color: aliceblue; /*cor da fonte*/
+ padding-left: 33px;
+ padding-right: 33px;
+ padding-bottom: 16px;
+ padding-top: 16px;
+ border-radius: 9px;
+ background: #65886e;
+ border: none;
+ font-family: inherit;
+ text-align: center;
+ cursor: pointer;
+ transition: 0.4s;
+}
+
+#bottone1:hover {
+ box-shadow: 7px 5px 56px 7px #abbda4;
+ background-color: #7ea387;
+}
+
+#bottone1:active {
+ transform: scale(0.97);
+ box-shadow: 7px 5px 56px -10px #13db56;
+}
