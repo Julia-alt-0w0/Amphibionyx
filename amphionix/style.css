@@ -1,0 +1,154 @@
+/* Faz o body ocupar toda a altura da tela e organizar os elementos em coluna */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* altura total da tela */
+    margin: 0;
+}
+
+/* Faz o main ocupar o espaço disponível entre header e footer */
+main {
+    flex: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgb(59, 92, 59) !important;
+}
+
+/* CARROSSEL */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+    object-fit: cover;
+}
+
+/* MARKETING */
+.marketing .col-lg-4 {
+    background-color: rgba(172, 184, 180, 0.363);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 img {
+    width: 140px;
+    height: 120px;
+    border-radius: 50%;
+    
+}
+
+.col-lg-4 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+/* FEATURETTES */
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+/*footer*/
+.custom-footer {
+    min-height: 200px; /* altura mínima */
+    padding: 40px 0;   /* 50px em cima e embaixo */
+    margin-top: 10px;
+    background-color: rgb(84, 99, 81);
+}
+
+
+.btn-frog {
+  padding: 1.1em 2.5em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #000;
+  background-color: #508f5e9f;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-frog:hover {
+  background-color: #2175549f;
+  box-shadow: 0px 15px 20px rgba(27, 43, 36, 0.4);
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.btn-frog:active {
+  transform: translateY(-2px);
+}
+
+
+/*fade-in das imagens*/
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.hero {
+  background-color: #3f5f3f;
+  height: 300px;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+}
+
+
+
+
+
+
+
